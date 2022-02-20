@@ -1,0 +1,42 @@
+.carrusel ul{
+    list-style: none;
+    margin: 0;
+    padding: 0
+
+}
+
+.carrusel{
+    display: flex;
+    gap: 10px;
+}
+
+.carrusel-fotos img{
+border: 3px solid black;
+width: 200px;
+height: 200px;
+
+}
+
+.carrusel-fotos{
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+
+}
+
+.menu-carrusel{
+    display: none;
+}
+
+@media screen and (min-width:500px){
+    .carrusel-fotos{
+        overflow: hidden;
+    }
+   .menu-carrusel{
+       display: block;
+   }
+   .menu-carrusel img{
+       width: 50px;
+       height: 40px;
+   }
+}
